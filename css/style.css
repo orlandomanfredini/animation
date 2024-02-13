@@ -1,0 +1,205 @@
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, li, 
+menu{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    width: 100%;
+    background-color: #0160FF;
+    padding: 5px 15px;
+    font-size: 13px;
+    border: none;
+    color: white;
+    transition: all 1s ease-in-out;
+    
+}
+
+button:hover{
+    text-decoration: underline;
+    background-color: #12A7D7;
+}
+
+/* FISSI */
+
+.container-sm{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.container-lg{
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+/* Regole logo invert */
+.col-partner2{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
+}
+
+.partner-logo{
+    width: 50%;
+    aspect-ratio: 1/1;
+    position: relative;
+    
+}
+
+.green{
+    background-color:#84C685;
+}
+
+.bordeaux{
+    background-color: #711F0F;
+}
+
+.blue{
+    background-color: #12A7D7;
+}
+
+.red-fire{
+   background-color: #C20000; 
+}
+
+.red{
+    background-color: red;
+    
+}
+
+.red img{
+    width: 100%;
+}
+
+
+.cobalt{
+    background-color:#5BB7E2 ;
+}
+
+.darkblue{
+    background-color:#19237D;
+}
+
+.yellow{
+    background-color: #ECDE2A;
+}
+
+.partner-logo img{
+    padding: 55px;
+    filter: invert(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+
+.col-partner-large{
+    flex-direction: column;
+    background-color:#F5F5F5 ;
+}
+
+.col-partner-large img{
+    max-width: 65%;
+    padding: 20px;
+}
+
+.col-partner-large hr{
+    color: gray;
+    width: 60px;
+    margin-left: 20px;
+    border-bottom: none;
+    
+}
+
+.col-partner-large p{
+    font-size: 13px;
+    line-height: 18px;
+    padding: 20px;
+}
+
+.col-partner-large span{
+    font-size: 12px;
+    padding: 20px;
+}
+
+
+/* aggiunta codice */
+
+.overlay{
+    animation-name: change-bg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes change-bg{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.none-bg > img{
+    animation-name: none-bg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes none-bg{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
